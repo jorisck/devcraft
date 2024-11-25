@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const LeadModal = () => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -12,23 +14,21 @@ export const LeadModal = () => {
   });
 
   useEffect(() => {
-   
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-        sessionStorage.setItem('hasSeenModal', 'true');
-      }, 1000);
-      return () => clearTimeout(timer);
-    
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+      sessionStorage.setItem('hasSeenModal', 'true');
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
       // Here you would integrate with your email service
-      toast.success('Thank you for your interest! We\'ll contact you soon.');
+      toast.success(t('modal.success'));
       setIsOpen(false);
     } catch (error) {
-      toast.error('Something went wrong. Please try again.');
+      toast.error(t('modal.error'));
     }
   };
 
@@ -49,10 +49,10 @@ export const LeadModal = () => {
 
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              Get 75% OFF Now!
+              {t('modal.title')}
             </h3>
             <p className="text-gray-600">
-              Tell us about your project and secure your Black Friday discount today.
+              {t('modal.subtitle')}
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export const LeadModal = () => {
                 type="text"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                placeholder="Your Name"
+                placeholder={t('modal.name')}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md"
                 required
               />
@@ -72,7 +72,7 @@ export const LeadModal = () => {
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                placeholder="Email Address"
+                placeholder={t('modal.email')}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md"
                 required
               />
@@ -82,7 +82,7 @@ export const LeadModal = () => {
                 type="tel"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="Phone Number"
+                placeholder={t('modal.phone')}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md"
                 required
               />
@@ -91,7 +91,7 @@ export const LeadModal = () => {
               <textarea
                 value={formData.description}
                 onChange={(e) => setFormData({ ...formData, description: e.target.value })}
-                placeholder="Tell us about your project"
+                placeholder={t('modal.description')}
                 rows={4}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md"
                 required
@@ -101,7 +101,7 @@ export const LeadModal = () => {
               type="submit"
               className="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition"
             >
-              Claim My Discount
+              {t('modal.submit')}
             </button>
           </form>
         </div>

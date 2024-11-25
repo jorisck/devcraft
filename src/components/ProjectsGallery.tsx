@@ -1,27 +1,53 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const ProjectsGallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useLanguage();
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Modern online store with seamless checkout',
-      image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800&h=500',
-      tech: ['React', 'Node.js', 'Stripe'],
+      title: 'Wordlogger',
+      descriptionKey: 'projects.wordlogger.description',
+      image: '/wordlogger.png',
+      tech: ['React', 'Node.js', 'Vite'],
+      link: 'https://www.wordlogger.fun',
     },
     {
-      title: 'Healthcare Portal',
-      description: 'Patient management system with telemedicine',
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800&h=500',
-      tech: ['React', 'TypeScript', 'AWS'],
+      title: 'Dash-Runner',
+      descriptionKey: 'projects.dashrunner.description',
+      image: '/dashrunner.png',
+      tech: ['React', 'TypeScript', 'Web3'],
+      link: 'https://www.dash-runner.com',
     },
     {
-      title: 'Real Estate Platform',
-      description: 'Property listing and management system',
-      image: 'https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?auto=format&fit=crop&q=80&w=800&h=500',
-      tech: ['Next.js', 'MongoDB', 'Google Maps'],
+      title: 'Afro Bowl',
+      descriptionKey: 'projects.afrobowl.description',
+      image: '/afrobowl.png',
+      tech: ['Next.js', 'Contentfull', 'Google'],
+      link: 'https://www.afrobwol.be'
+    },
+    {
+      title: 'Bridge23',
+      descriptionKey: 'projects.bridge23.description',
+      image: '/bridge.png',
+      tech: ['Next.js', 'Contentfull', 'Google'],
+      link: 'https://www.bridge23.xyz'
+    },
+    {
+      title: 'Limitless Cabs',
+      descriptionKey: 'projects.limitlesscabs.description',
+      image: '/cabs.png',
+      tech: ['Next.js', 'Contentfull', 'Google'],
+      link: 'https://www.limitlesstaxi.be'
+    },
+    {
+      title: 'Energy Mastering',
+      descriptionKey: 'projects.energymastering.description',
+      image: '/emaster.png',
+      tech: ['Next.js', 'Contentfull', 'Google'],
+      link: 'https://www.energy-mastering.be'
     },
   ];
 
@@ -37,9 +63,11 @@ export const ProjectsGallery = () => {
     <div className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Latest Projects</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            {t('projects.title')}
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our portfolio of successful projects delivered to clients worldwide.
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -59,16 +87,16 @@ export const ProjectsGallery = () => {
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8">
                       <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-                      <p className="text-gray-200 mb-4">{project.description}</p>
+                      <p className="text-gray-200 mb-4">{t(project.descriptionKey)}</p>
                       <div className="flex gap-2">
-                        {project.tech.map((tech) => (
-                          <span
-                            key={tech}
-                            className="px-3 py-1 bg-white/20 rounded-full text-sm text-white"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1 bg-white/20 rounded-full text-sm text-white hover:bg-white/30 transition-colors"
+                        >
+                          {t('projects.visitSite')}
+                        </a>
                       </div>
                     </div>
                   </div>

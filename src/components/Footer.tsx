@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Code2, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export const Footer = () => {
+  const { t } = useLanguage();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -13,43 +17,68 @@ export const Footer = () => {
               <span className="font-bold text-xl text-white">DevCraft</span>
             </Link>
             <p className="text-gray-400">
-              Transforming businesses through innovative web solutions.
+              {t('footer.description')}
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <h3 className="text-white font-semibold mb-4">
+              {t('footer.services.title')}
+            </h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-indigo-400 transition">Web Development</a></li>
-              <li><a href="#" className="hover:text-indigo-400 transition">UI/UX Design</a></li>
-              <li><a href="#" className="hover:text-indigo-400 transition">E-Commerce</a></li>
-              <li><a href="#" className="hover:text-indigo-400 transition">Maintenance</a></li>
+              <li>
+                <a href="https://www.justonline.be" className="hover:text-indigo-400 transition">
+                  {t('footer.services.web')}
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-indigo-400 transition">
+                  {t('footer.services.ecommerce')}
+                </a>
+              </li>
+              <li>
+                <a href="https://www.justonline.be" className="hover:text-indigo-400 transition">
+                  {t('footer.services.maintenance')}
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="text-white font-semibold mb-4">
+              {t('footer.company.title')}
+            </h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="hover:text-indigo-400 transition">Home</Link></li>
-              <li><Link to="/contact" className="hover:text-indigo-400 transition">Contact</Link></li>
-              <li><a href="#" className="hover:text-indigo-400 transition">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-indigo-400 transition">Terms of Service</a></li>
+              <li>
+                <Link to="/contact" className="hover:text-indigo-400 transition">
+                  {t('footer.company.contact')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="hover:text-indigo-400 transition">
+                  {t('footer.company.privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms" className="hover:text-indigo-400 transition">
+                  {t('footer.company.terms')}
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-white font-semibold mb-4">
+              {t('footer.social.title')}
+            </h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-indigo-400 transition">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-indigo-400 transition">
+              <a href="https://x.com/cactuskoding" className="hover:text-indigo-400 transition">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-indigo-400 transition">
+              <a href="https://www.linkedin.com/in/justkoding/in" className="hover:text-indigo-400 transition">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-indigo-400 transition">
+              <a href="https://www.instagram.com/imjustkoding/" className="hover:text-indigo-400 transition">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
@@ -57,7 +86,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DevCraft. All rights reserved.</p>
+          <p>{t('footer.copyright').replace('{year}', currentYear.toString())}</p>
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ export const Stats = () => {
     },
     {
       icon: Award,
-      value: '1000+',
+      value: '20+',
       label: 'Projects Completed',
     },
   ];
