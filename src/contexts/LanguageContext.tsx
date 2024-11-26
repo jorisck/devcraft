@@ -89,16 +89,17 @@ const translations = {
     // Testimonials
     'testimonials.title': 'What Our Clients Say',
     'testimonials.subtitle': 'Don\'t just take our word for it. Here\'s what our clients have to say about their experience working with us.',
-    'testimonials.yannick.content': 'As a young startup, we needed to digitize without hiring an IT team. So we partnered with JustOnline. Very quickly, we had our own platform and were able to handle new customer requests (5x in one month) while keeping the same team.',
+    'testimonials.yannick.content': 'As a young startup, we needed to digitize without hiring an IT team. So we partnered with DevCraft. Very quickly, we had our own platform and were able to handle new customer requests (5x in one month) while keeping the same team.',
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': 'Available to help where it\'s not planned. As usual, they exceeded all my expectations. You can see that they know their job inside out and that they gave it their all. Every little thing, every detail, you can feel they put their heart into it. Working together has been super enriching, and I\'m really grateful for this beyond-top result!',
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'When I created my electric charging station company, I didn\'t know much about the digital world. I needed to be guided by professionals to create my online presence. I called JustOnline and it was a matter of 2 weeks: Website, Google, professional email, and automation.',
+    'testimonials.anouar.content': 'When I created my electric charging station company, I didn\'t know much about the digital world. I needed to be guided by professionals to create my online presence. I called DevCraft and it was a matter of 2 weeks: Website, Google, professional email, and automation.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
     'modal.title': 'Get 75% OFF Now!',
     'modal.subtitle': 'Tell us about your project and secure your Black Friday discount today.',
+    'modal.note': 'No commitment',
     'modal.name': 'Your Name',
     'modal.email': 'Email Address',
     'modal.phone': 'Phone Number',
@@ -106,6 +107,7 @@ const translations = {
     'modal.submit': 'Claim My Discount',
     'modal.success': 'Thank you for your interest! We\'ll contact you soon.',
     'modal.error': 'Something went wrong. Please try again.',
+    'modal.sending': 'Sending...',
 
     // Privacy Policy
     'privacy.title': 'Privacy Policy',
@@ -126,7 +128,7 @@ const translations = {
     'contact.page.address.title': 'Our Office',
     'contact.page.address.content': 'Rue de la Loi 42, 1000 Brussels, Belgium',
     'contact.page.email.title': 'Email Us',
-    'contact.page.email.content': 'info@devcraft.com',
+    'contact.page.email.content': 'contact@devs-craft.com',
     'contact.page.phone.title': 'Call Us',
     'contact.page.phone.content': '+32 483 00 27 92',
     'contact.form.success': 'Message sent successfully! We\'ll get back to you soon.',
@@ -194,7 +196,7 @@ const translations = {
 
     // About
     'about.title': 'À Propos de DevCraft',
-    'about.description': 'Avec plus d\'une décennie d\'expérience, nous avons aidé des centaines d\'entreprises à transformer leur présence numérique.',
+    'about.description': 'Avec plus d\'une décennie d\'expérience, nous avons aidé des centaines d\'entreprises à transformer leur présence digitale.',
     
     // CTA
     'cta.title': 'Prêt à Transformer Votre Présence Digitale ?',
@@ -204,7 +206,7 @@ const translations = {
 
     // Contact Form
     'contact.title': 'Créons Quelque Chose d\'Extraordinaire Ensemble',
-    'contact.description': 'Profitez de notre offre Black Friday et transformez votre présence numérique.',
+    'contact.description': 'Profitez de notre offre Black Friday et transformez votre présence digitale.',
     'contact.name': 'Nom Complet',
     'contact.email': 'Adresse Email',
     'contact.phone': 'Numéro de Téléphone',
@@ -244,16 +246,17 @@ const translations = {
     // Testimonials
     'testimonials.title': 'Ce Que Disent Nos Clients',
     'testimonials.subtitle': 'Ne nous croyez pas sur parole. Voici ce que nos clients disent de leur expérience avec nous.',
-    'testimonials.yannick.content': "En tant que jeune start-up, nous avions besoin de nous digitaliser sans embaucher une équipe d'informaticiens. Nous nous sommes donc associés à JustOnline. Très rapidement, nous avons eu notre propre plateforme et nous avons pu absorber les nouvelles demandes de nos clients (x5 en un mois) tout en gardant la même équipe.",
+    'testimonials.yannick.content': "En tant que jeune start-up, nous avions besoin de nous digitaliser sans embaucher une équipe d'informaticiens. Nous nous sommes donc associés à DevCraft. Très rapidement, nous avons eu notre propre plateforme et nous avons pu absorber les nouvelles demandes de nos clients (x5 en un mois) tout en gardant la même équipe.",
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': "Dispo pour aider où ce n'est pas prévu. Comme d'habitude, ils ont dépassé toutes mes attentes. On voit qu'ils connaissent leur boulot sur le bout des doigts et qu'il se sont donnés à fond. Chaque petit truc, chaque détail, on sent qu'ils y ont mis du cœur. Travailler ensemble a été super enrichissant, et je suis vraiment reconnaissant pour ce résultat au-delà du top !",
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'Lorsque j\'ai créé mon entreprise de bornes électriques, je ne connaissais pas grand-chose au monde numérique. J\'avais besoin d\'être accompagné par des professionnels pour créer ma présence en ligne. J\'ai appelé JustOnline et ce fut une question de 2 semaines : Site web, google, email pro et automatisation.',
+    'testimonials.anouar.content': 'Lorsque j\'ai créé mon entreprise de bornes électriques, je ne connaissais pas grand-chose au monde numérique. J\'avais besoin d\'être accompagné par des professionnels pour créer ma présence en ligne. J\'ai appelé DevCraft et ce fut une question de 2 semaines : Site web, google, email pro et automatisation.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
     'modal.title': 'Obtenez 75% de Réduction !',
     'modal.subtitle': 'Parlez-nous de votre projet et profitez de notre réduction Black Friday dès aujourd\'hui.',
+    'modal.note': 'Sans engagement',
     'modal.name': 'Votre Nom',
     'modal.email': 'Adresse Email',
     'modal.phone': 'Numéro de Téléphone',
@@ -261,6 +264,7 @@ const translations = {
     'modal.submit': 'Obtenir Ma Réduction',
     'modal.success': 'Merci de votre intérêt ! Nous vous contacterons bientôt.',
     'modal.error': 'Une erreur est survenue. Veuillez réessayer.',
+    'modal.sending': 'Envoi en cours...',
 
     // Privacy Policy
     'privacy.title': 'Politique de Confidentialité',
@@ -281,7 +285,7 @@ const translations = {
     'contact.page.address.title': 'Notre Bureau',
     'contact.page.address.content': 'Rue de la Loi 42, 1000 Bruxelles, Belgique',
     'contact.page.email.title': 'Écrivez-Nous',
-    'contact.page.email.content': 'info@devcraft.com',
+    'contact.page.email.content': 'contact@devs-craft.com',
     'contact.page.phone.title': 'Appelez-Nous',
     'contact.page.phone.content': '+32 483 00 27 92',
     'contact.form.success': 'Message envoyé avec succès ! Nous vous répondrons dès que possible.',
@@ -399,16 +403,17 @@ const translations = {
     // Testimonials
     'testimonials.title': 'Wat Onze Klanten Zeggen',
     'testimonials.subtitle': 'Neem niet alleen ons woord ervoor. Dit is wat onze klanten zeggen over hun ervaring met ons.',
-    'testimonials.yannick.content': 'Als jonge startup moesten we digitaliseren zonder een IT-team aan te nemen. Dus werkten we samen met JustOnline. Heel snel hadden we ons eigen platform en konden we nieuwe klantaanvragen verwerken (5x in één maand) met behoud van hetzelfde team.',
+    'testimonials.yannick.content': 'Als jonge startup moesten we digitaliseren zonder een IT-team aan te nemen. Dus werkten we samen met DevCraft. Heel snel hadden we ons eigen platform en konden we nieuwe klantaanvragen verwerken (5x in één maand) met behoud van hetzelfde team.',
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': 'Beschikbaar om te helpen waar het niet gepland is. Zoals gewoonlijk hebben ze al mijn verwachtingen overtroffen. Je ziet dat ze hun vak door en door kennen en dat ze alles hebben gegeven. Elk klein ding, elk detail, je voelt dat ze er hun hart in hebben gestoken. Samenwerken was super verrijkend, en ik ben echt dankbaar voor dit meer dan top resultaat!',
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'Toen ik mijn bedrijf voor elektrische laadpalen oprichtte, wist ik niet veel van de digitale wereld. Ik had begeleiding nodig van professionals om mijn online aanwezigheid te creëren. Ik belde JustOnline en het was een kwestie van 2 weken: Website, Google, professionele e-mail en automatisering.',
+    'testimonials.anouar.content': 'Toen ik mijn bedrijf voor elektrische laadpalen oprichtte, wist ik niet veel van de digitale wereld. Ik had begeleiding nodig van professionals om mijn online aanwezigheid te creëren. Ik belde DevCraft en het was een kwestie van 2 weken: Website, Google, professionele e-mail en automatisering.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
     'modal.title': 'Krijg Nu 75% Korting!',
     'modal.subtitle': 'Vertel ons over uw project en verzeker u vandaag van uw Black Friday-korting.',
+    'modal.note': 'Geen verplichting',
     'modal.name': 'Uw Naam',
     'modal.email': 'E-mailadres',
     'modal.phone': 'Telefoonnummer',
@@ -416,6 +421,7 @@ const translations = {
     'modal.submit': 'Claim Mijn Korting',
     'modal.success': 'Bedankt voor uw interesse! We nemen binnenkort contact met u op.',
     'modal.error': 'Er is iets misgegaan. Probeer het opnieuw.',
+    'modal.sending': 'Bericht wordt verzonden...',
 
     // Privacy Policy
     'privacy.title': 'Privacybeleid',
@@ -436,7 +442,7 @@ const translations = {
     'contact.page.address.title': 'Our Office',
     'contact.page.address.content': 'Rue de la Loi 42, 1000 Brussels, Belgium',
     'contact.page.email.title': 'Email Us',
-    'contact.page.email.content': 'info@devcraft.com',
+    'contact.page.email.content': 'contact@devs-craft.com',
     'contact.page.phone.title': 'Call Us',
     'contact.page.phone.content': '+32 483 00 27 92',
     'contact.form.success': 'Message sent successfully! We\'ll get back to you soon.',

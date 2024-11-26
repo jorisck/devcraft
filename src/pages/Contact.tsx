@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { MapPin, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import toast from 'react-hot-toast';
+import { sendEmail } from '../services/email';
+
 
 export const Contact = () => {
   const { t } = useLanguage();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,24 +17,30 @@ export const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
-      // Here you would integrate with your email service
+      await sendEmail(formData);
       toast.success(t('contact.form.success'));
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       toast.error(t('contact.form.error'));
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <div className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 mt-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            {t('contact.page.title')}
+            {t('contact.title')}
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            {t('contact.page.subtitle')}
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            {t('contact.description')}
+          </p>
+          <p className="text-gray-600 max-w-2xl mx-auto italic font-bold">
+            {t('modal.note')}
           </p>
         </div>
 
@@ -86,6 +95,7 @@ export const Contact = () => {
                   placeholder={t('contact.name')}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -96,6 +106,7 @@ export const Contact = () => {
                   placeholder={t('contact.email')}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -106,6 +117,7 @@ export const Contact = () => {
                   placeholder={t('contact.phone')}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <div>
@@ -116,11 +128,13 @@ export const Contact = () => {
                   rows={4}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md"
                   required
+                  disabled={isLoading}
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition"
+                className="w-full bg-indigo-600 text-white py-3 px-4 rounded-md hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={isLoading}
               >
                 {t('contact.submit')}
               </button>

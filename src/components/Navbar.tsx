@@ -14,7 +14,7 @@ export const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-indigo-600" />
-            <span className="font-bold text-xl">DevCraft</span>
+            <span className="font-bold text-xl">Devs-Craft</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
