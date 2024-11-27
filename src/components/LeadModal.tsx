@@ -46,6 +46,9 @@ export const LeadModal = () => {
     
     // Only increment count if URL has changed
     if (lastUrl !== location.pathname) {
+      // Store current URL
+      localStorage.setItem(LAST_URL_KEY, location.pathname);
+
       // Check if form was previously submitted
       const hasSubmitted = localStorage.getItem(FORM_SUBMITTED_KEY) === 'true';
       if (hasSubmitted) {
@@ -73,9 +76,6 @@ export const LeadModal = () => {
         viewCount++;
         localStorage.setItem(MODAL_VIEW_COUNT_KEY, viewCount.toString());
       }
-
-      // Store current URL
-      localStorage.setItem(LAST_URL_KEY, location.pathname);
     }
   }, [location.pathname]); // Trigger effect when URL changes
 

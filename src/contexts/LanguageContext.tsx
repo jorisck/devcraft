@@ -215,7 +215,7 @@ const translations = {
 
     // Projects Gallery
     'projects.title': 'Découvrez nos Derniers Projets',
-    'projects.subtitle': 'Découvrez notre portfolio de projets réussis livrés à des clients du monde entier.',
+    'projects.subtitle': 'Découvrez notre portfolio de projets de sites vitrines ou d\'applications web.',
     'projects.visitSite': 'Visiter le Site',
 
     // Projects descriptions
@@ -228,20 +228,20 @@ const translations = {
 
     // About Section
     'about.mainTitle': 'À Propos de Devs-Craft',
-    'about.paragraph1': 'Avec plus d\'une décennie de succès prouvé, nous avons permis à d\'innombrables entreprises d\'améliorer leur présence en ligne et d\'atteindre leurs objectifs. Notre passion réside dans la création d\'expériences numériques exceptionnelles qui produisent des résultats mesurables.',
-    'about.paragraph2': 'Notre équipe de développeurs experts se spécialise dans la création de solutions robustes et évolutives adaptées à vos besoins uniques, des sites vitrines aux plateformes e-commerce en passant par les applications personnalisées.',
-    'about.paragraph3': 'Nous sommes fiers de livrer des projets dans les délais sans compromettre la qualité, garantissant que votre vision devient réalité de manière transparente. Au-delà du développement, notre connaissance approfondie du paysage numérique nous permet de fournir des conseils stratégiques pour vos défis marketing.',
+    'about.paragraph1': 'Avec plus d\'une décennie dans le secteur, nous avons permis à plusieurs entreprises d\'améliorer leur présence en ligne et d\'atteindre leurs objectifs. Notre passion réside dans la création d\'expériences numériques exceptionnelles qui produisent des résultats mesurables.',
+    'about.paragraph2': 'Notre équipe de développeurs, experts dans leur domaine, est spécialisée dans la création de solutions robustes et évolutives adaptées à vos besoins uniques, des sites vitrines aux plateformes e-commerce en passant par les applications personnalisées.',
+    'about.paragraph3': 'Nous sommes fiers de livrer des projets dans les délais sans compromettre la qualité, garantissant que votre vision devient réalité de manière transparente. Au-delà du développement, notre connaissance approfondie du paysage numérique nous permet de vous fournir des conseils stratégiques pour vos défis marketing.',
     'about.paragraph4': 'Prêt à faire passer votre entreprise au niveau supérieur ? Créons ensemble quelque chose d\'extraordinaire.',
     
     // About Features
-    'about.features.development.title': 'Développement Expert',
-    'about.features.development.description': 'Notre équipe de développeurs qualifiés crée des solutions robustes et évolutives.',
+    'about.features.development.title': 'Développement Web',
+    'about.features.development.description': 'Notre équipe de développeurs qualifiés vous crée des solutions robustes et évolutives.',
     'about.features.delivery.title': 'Livraison Rapide',
-    'about.features.delivery.description': 'Nous livrons les projets à temps sans compromettre la qualité.',
+    'about.features.delivery.description': 'Nous livrons les projets à temps sans compromettre la qualité et avec 0 frais d\'hébergement.',
     'about.features.client.title': 'Centré sur le Client',
     'about.features.client.description': 'Votre succès est notre priorité. Nous travaillons en étroite collaboration avec vous à chaque étape.',
     'about.features.security.title': 'Sûr et Fiable',
-    'about.features.security.description': 'Nous appliquons les meilleures pratiques en matière de sécurité et de performance.',
+    'about.features.security.description': 'Nous appliquons les meilleures pratiques en matière de sécurité et de performance sur les produits que nous construisons.',
 
     // Testimonials
     'testimonials.title': 'Ce Que Disent Nos Clients',
