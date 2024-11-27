@@ -38,7 +38,7 @@ const translations = {
     'stats.projects': 'Projects Completed',
 
     // About
-    'about.title': 'About DevCraft',
+    'about.title': 'About Devs-Craft',
     'about.description': 'With over a decade of experience, we\'ve helped hundreds of businesses transform their digital presence.',
     
     // CTA
@@ -70,7 +70,7 @@ const translations = {
     'projects.energymastering.description': 'A showcase website for an energy company',
 
     // About Section
-    'about.mainTitle': 'About DevCraft',
+    'about.mainTitle': 'About Devs-Craft',
     'about.paragraph1': 'With over a decade of proven success, we\'ve empowered countless businesses to elevate their online presence and achieve their goals. Our passion lies in crafting exceptional digital experiences that deliver measurable results.',
     'about.paragraph2': 'Our team of expert developers specializes in building robust and scalable solutions tailored to your unique needs, from showcase websites and e-commerce platforms to custom applications.',
     'about.paragraph3': 'We pride ourselves on delivering projects on time and without compromising quality, ensuring your vision becomes a reality seamlessly. Beyond development, our comprehensive knowledge of the digital landscape allows us to provide strategic advice for your marketing challenges, ensuring your success extends beyond just a great website.',
@@ -89,11 +89,11 @@ const translations = {
     // Testimonials
     'testimonials.title': 'What Our Clients Say',
     'testimonials.subtitle': 'Don\'t just take our word for it. Here\'s what our clients have to say about their experience working with us.',
-    'testimonials.yannick.content': 'As a young startup, we needed to digitize without hiring an IT team. So we partnered with DevCraft. Very quickly, we had our own platform and were able to handle new customer requests (5x in one month) while keeping the same team.',
+    'testimonials.yannick.content': 'As a young startup, we needed to digitize without hiring an IT team. So we partnered with Devs-Craft. Very quickly, we had our own platform and were able to handle new customer requests (5x in one month) while keeping the same team.',
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': 'Available to help where it\'s not planned. As usual, they exceeded all my expectations. You can see that they know their job inside out and that they gave it their all. Every little thing, every detail, you can feel they put their heart into it. Working together has been super enriching, and I\'m really grateful for this beyond-top result!',
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'When I created my electric charging station company, I didn\'t know much about the digital world. I needed to be guided by professionals to create my online presence. I called DevCraft and it was a matter of 2 weeks: Website, Google, professional email, and automation.',
+    'testimonials.anouar.content': 'When I created my electric charging station company, I didn\'t know much about the digital world. I needed to be guided by professionals to create my online presence. I called Devs-Craft and it was a matter of 2 weeks: Website, Google, professional email, and automation.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
@@ -111,8 +111,8 @@ const translations = {
 
     // Privacy Policy
     'privacy.title': 'Privacy Policy',
-    'privacy.lastUpdated': 'Last Updated: March 15, 2024',
-    'privacy.intro': 'At DevCraft, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.',
+    'privacy.lastUpdated': 'Last Updated: November 26, 2024',
+    'privacy.intro': 'At Devs-Craft, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.',
     'privacy.collection.title': 'Information We Collect',
     'privacy.collection.content': 'We collect information that you provide directly to us, including name, email address, phone number, and any other information you choose to provide.',
     'privacy.use.title': 'How We Use Your Information',
@@ -120,7 +120,7 @@ const translations = {
     'privacy.protection.title': 'How We Protect Your Information',
     'privacy.protection.content': 'We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or disclosure.',
     'privacy.contact.title': 'Contact Us',
-    'privacy.contact.content': 'If you have any questions about this Privacy Policy, please contact us at privacy@devcraft.com',
+    'privacy.contact.content': 'If you have any questions about this Privacy Policy, please contact us at contact@devs-craft.com',
 
     // Contact Page
     'contact.page.title': 'Get in Touch',
@@ -136,7 +136,7 @@ const translations = {
 
     // Terms of Service
     'terms.title': 'Terms of Service',
-    'terms.lastUpdated': 'Last Updated: March 15, 2024',
+    'terms.lastUpdated': 'Last Updated: November 26, 2024',
     'terms.intro': 'Please read these Terms of Service carefully before using our services.',
     'terms.acceptance.title': 'Acceptance of Terms',
     'terms.acceptance.content': 'By accessing and using our services, you accept and agree to be bound by these Terms of Service.',
@@ -151,7 +151,7 @@ const translations = {
     'terms.termination.title': 'Termination',
     'terms.termination.content': 'We reserve the right to terminate or suspend services if these terms are violated.',
     'terms.contact.title': 'Contact Us',
-    'terms.contact.content': 'If you have any questions about these Terms of Service, please contact us at legal@devcraft.com',
+    'terms.contact.content': 'If you have any questions about these Terms of Service, please contact us at contact@devs-craft.com',
 
     // Footer
     'footer.description': 'Transforming businesses through innovative web solutions.',
@@ -164,7 +164,7 @@ const translations = {
     'footer.company.privacy': 'Privacy Policy',
     'footer.company.terms': 'Terms of Service',
     'footer.social.title': 'Follow Us',
-    'footer.copyright': '© {year} DevCraft. All rights reserved.',
+    'footer.copyright': '© {year} Devs-Craft. All rights reserved.',
   },
   fr: {
     // Navigation
@@ -195,7 +195,7 @@ const translations = {
     'stats.projects': 'Projets Réalisés',
 
     // About
-    'about.title': 'À Propos de DevCraft',
+    'about.title': 'À Propos de Devs-Craft',
     'about.description': 'Avec plus d\'une décennie d\'expérience, nous avons aidé des centaines d\'entreprises à transformer leur présence digitale.',
     
     // CTA
@@ -227,7 +227,7 @@ const translations = {
     'projects.energymastering.description': 'Un site vitrine pour une entreprise dans le domaine de l\'énergie',
 
     // About Section
-    'about.mainTitle': 'À Propos de DevCraft',
+    'about.mainTitle': 'À Propos de Devs-Craft',
     'about.paragraph1': 'Avec plus d\'une décennie de succès prouvé, nous avons permis à d\'innombrables entreprises d\'améliorer leur présence en ligne et d\'atteindre leurs objectifs. Notre passion réside dans la création d\'expériences numériques exceptionnelles qui produisent des résultats mesurables.',
     'about.paragraph2': 'Notre équipe de développeurs experts se spécialise dans la création de solutions robustes et évolutives adaptées à vos besoins uniques, des sites vitrines aux plateformes e-commerce en passant par les applications personnalisées.',
     'about.paragraph3': 'Nous sommes fiers de livrer des projets dans les délais sans compromettre la qualité, garantissant que votre vision devient réalité de manière transparente. Au-delà du développement, notre connaissance approfondie du paysage numérique nous permet de fournir des conseils stratégiques pour vos défis marketing.',
@@ -246,11 +246,11 @@ const translations = {
     // Testimonials
     'testimonials.title': 'Ce Que Disent Nos Clients',
     'testimonials.subtitle': 'Ne nous croyez pas sur parole. Voici ce que nos clients disent de leur expérience avec nous.',
-    'testimonials.yannick.content': "En tant que jeune start-up, nous avions besoin de nous digitaliser sans embaucher une équipe d'informaticiens. Nous nous sommes donc associés à DevCraft. Très rapidement, nous avons eu notre propre plateforme et nous avons pu absorber les nouvelles demandes de nos clients (x5 en un mois) tout en gardant la même équipe.",
+    'testimonials.yannick.content': "En tant que jeune start-up, nous avions besoin de nous digitaliser sans embaucher une équipe d'informaticiens. Nous nous sommes donc associés à Devs-Craft. Très rapidement, nous avons eu notre propre plateforme et nous avons pu absorber les nouvelles demandes de nos clients (x5 en un mois) tout en gardant la même équipe.",
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': "Dispo pour aider où ce n'est pas prévu. Comme d'habitude, ils ont dépassé toutes mes attentes. On voit qu'ils connaissent leur boulot sur le bout des doigts et qu'il se sont donnés à fond. Chaque petit truc, chaque détail, on sent qu'ils y ont mis du cœur. Travailler ensemble a été super enrichissant, et je suis vraiment reconnaissant pour ce résultat au-delà du top !",
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'Lorsque j\'ai créé mon entreprise de bornes électriques, je ne connaissais pas grand-chose au monde numérique. J\'avais besoin d\'être accompagné par des professionnels pour créer ma présence en ligne. J\'ai appelé DevCraft et ce fut une question de 2 semaines : Site web, google, email pro et automatisation.',
+    'testimonials.anouar.content': 'Lorsque j\'ai créé mon entreprise de bornes électriques, je ne connaissais pas grand-chose au monde numérique. J\'avais besoin d\'être accompagné par des professionnels pour créer ma présence en ligne. J\'ai appelé Devs-Craft et ce fut une question de 2 semaines : Site web, google, email pro et automatisation.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
@@ -268,8 +268,8 @@ const translations = {
 
     // Privacy Policy
     'privacy.title': 'Politique de Confidentialité',
-    'privacy.lastUpdated': 'Dernière Mise à Jour : 15 mars 2024',
-    'privacy.intro': 'Chez DevCraft, nous prenons votre confidentialité au sérieux. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles.',
+    'privacy.lastUpdated': 'Dernière Mise à Jour : 26 novembre 2024',
+    'privacy.intro': 'Chez Devs-Craft, nous prenons votre confidentialité au sérieux. Cette Politique de Confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles.',
     'privacy.collection.title': 'Informations Que Nous Collectons',
     'privacy.collection.content': 'Nous collectons des informations que vous nous fournissez directement, y compris votre nom, adresse email, numéro de téléphone et toute autre information que vous choisissez de nous fournir.',
     'privacy.use.title': 'Comment Nous Utilisons Vos Informations',
@@ -277,7 +277,7 @@ const translations = {
     'privacy.protection.title': 'Comment Nous Protégeons Vos Informations',
     'privacy.protection.content': 'Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre l\'accès non autorisé, la modification ou la divulgation.',
     'privacy.contact.title': 'Contactez-Nous',
-    'privacy.contact.content': 'Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à privacy@devcraft.com',
+    'privacy.contact.content': 'Si vous avez des questions concernant cette Politique de Confidentialité, veuillez nous contacter à contact@devs-craft.com',
 
     // Contact Page
     'contact.page.title': 'Nous Contacter',
@@ -293,7 +293,7 @@ const translations = {
 
     // Terms of Service
     'terms.title': 'Conditions Générales de Service',
-    'terms.lastUpdated': 'Dernière Mise à Jour : 15 mars 2024',
+    'terms.lastUpdated': 'Dernière Mise à Jour : 26 novembre 2024',
     'terms.intro': 'Veuillez lire attentivement ces Conditions Générales de Service avant d\'utiliser nos services.',
     'terms.acceptance.title': 'Acceptation des Conditions',
     'terms.acceptance.content': 'En accédant et en utilisant nos services, vous acceptez d\'être lié par ces Conditions Générales de Service.',
@@ -308,7 +308,7 @@ const translations = {
     'terms.termination.title': 'Résiliation',
     'terms.termination.content': 'Nous nous réservons le droit de résilier ou de suspendre les services en cas de violation de ces conditions.',
     'terms.contact.title': 'Contactez-Nous',
-    'terms.contact.content': 'Si vous avez des questions concernant ces Conditions Générales de Service, veuillez nous contacter à legal@devcraft.com',
+    'terms.contact.content': 'Si vous avez des questions concernant ces Conditions Générales de Service, veuillez nous contacter à contact@devs-craft.com',
 
     // Footer
     'footer.description': 'Transformer les entreprises grâce à des solutions web innovantes.',
@@ -321,7 +321,7 @@ const translations = {
     'footer.company.privacy': 'Politique de Confidentialité',
     'footer.company.terms': 'Conditions d\'Utilisation',
     'footer.social.title': 'Suivez-Nous',
-    'footer.copyright': '© {year} DevCraft. Tous droits réservés.',
+    'footer.copyright': '© {year} Devs-Craft. Tous droits réservés.',
   },
   nl: {
     // Navigation
@@ -339,10 +339,10 @@ const translations = {
     'hero.regular': 'Normale Prijs:',
     
     // Features
-    'features.development': 'Volledige Webontwikkeling',
-    'features.design': 'Aangepast Ontwerp',
-    'features.responsive': 'Mobiel Responsive',
-    'features.seo': 'Free Hosting',
+    'features.development': '100% Webontwikkeling',
+    'features.design': 'Ontwerp op Maat',
+    'features.responsive': 'Responsive Mobile',
+    'features.seo': 'Gratis Hosting',
     'features.speed': 'Snelle Laadtijd',
     'features.cms': 'Content Management',
 
@@ -352,7 +352,7 @@ const translations = {
     'stats.projects': 'Voltooide Projecten',
 
     // About
-    'about.title': 'Over DevCraft',
+    'about.title': 'Over Devs-Craft',
     'about.description': 'Met meer dan tien jaar ervaring hebben we honderden bedrijven geholpen hun digitale aanwezigheid te transformeren.',
     
     // CTA
@@ -384,10 +384,10 @@ const translations = {
     'projects.energymastering.description': 'Een showcase website voor een energiebedrijf',
 
     // About Section
-    'about.mainTitle': 'Over DevCraft',
+    'about.mainTitle': 'Over Devs-Craft',
     'about.paragraph1': 'Met meer dan tien jaar bewezen succes hebben we talloze bedrijven geholpen hun online aanwezigheid te verbeteren en hun doelen te bereiken. Onze passie ligt in het creëren van uitzonderlijke digitale ervaringen die meetbare resultaten opleveren.',
-    'about.paragraph2': 'Ons team van expertontwikkelaars is gespecialiseerd in het bouwen van robuuste en schaalbare oplossingen op maat van uw unieke behoeften, van showcase websites en e-commerce platforms tot aangepaste applicaties.',
-    'about.paragraph3': 'We zijn er trots op dat we projecten op tijd opleveren zonder in te leveren op kwaliteit, zodat uw visie naadloos werkelijkheid wordt. Naast ontwikkeling stelt onze uitgebreide kennis van het digitale landschap ons in staat om strategisch advies te geven voor uw marketinguitdagingen.',
+    'about.paragraph2': 'Ons team van deskundige ontwikkelaars is gespecialiseerd in het creëren van robuuste en schaalbare oplossingen op maat van uw unieke behoeften, van showcase sites tot e-commerce platforms en applicaties op maat.',
+    'about.paragraph3': 'We zijn er trots op dat we projecten op tijd opleveren zonder afbreuk te doen aan de kwaliteit, zodat uw visie naadloos werkelijkheid wordt. Naast ontwikkeling kunnen we dankzij onze diepgaande kennis van het digitale landschap strategisch advies geven voor uw marketinguitdagingen.',
     'about.paragraph4': 'Klaar om uw bedrijf naar een hoger niveau te tillen? Laten we samen iets buitengewoons creëren.',
     
     // About Features
@@ -403,11 +403,11 @@ const translations = {
     // Testimonials
     'testimonials.title': 'Wat Onze Klanten Zeggen',
     'testimonials.subtitle': 'Neem niet alleen ons woord ervoor. Dit is wat onze klanten zeggen over hun ervaring met ons.',
-    'testimonials.yannick.content': 'Als jonge startup moesten we digitaliseren zonder een IT-team aan te nemen. Dus werkten we samen met DevCraft. Heel snel hadden we ons eigen platform en konden we nieuwe klantaanvragen verwerken (5x in één maand) met behoud van hetzelfde team.',
+    'testimonials.yannick.content': 'Als jonge startup moesten we digitaliseren zonder een IT-team aan te nemen. Dus werkten we samen met Devs-Craft. Heel snel hadden we ons eigen platform en konden we nieuwe klantaanvragen verwerken (5x in één maand) met behoud van hetzelfde team.',
     'testimonials.yannick.role': 'FamilyCabs',
     'testimonials.kevin.content': 'Beschikbaar om te helpen waar het niet gepland is. Zoals gewoonlijk hebben ze al mijn verwachtingen overtroffen. Je ziet dat ze hun vak door en door kennen en dat ze alles hebben gegeven. Elk klein ding, elk detail, je voelt dat ze er hun hart in hebben gestoken. Samenwerken was super verrijkend, en ik ben echt dankbaar voor dit meer dan top resultaat!',
     'testimonials.kevin.role': 'Team AfroBowl',
-    'testimonials.anouar.content': 'Toen ik mijn bedrijf voor elektrische laadpalen oprichtte, wist ik niet veel van de digitale wereld. Ik had begeleiding nodig van professionals om mijn online aanwezigheid te creëren. Ik belde DevCraft en het was een kwestie van 2 weken: Website, Google, professionele e-mail en automatisering.',
+    'testimonials.anouar.content': 'Toen ik mijn bedrijf voor elektrische laadpalen oprichtte, wist ik niet veel van de digitale wereld. Ik had begeleiding nodig van professionals om mijn online aanwezigheid te creëren. Ik belde Devs-Craft en het was een kwestie van 2 weken: Website, Google, professionele e-mail en automatisering.',
     'testimonials.anouar.role': 'CEO @ Electric Green',
 
     // Lead Modal
@@ -425,8 +425,8 @@ const translations = {
 
     // Privacy Policy
     'privacy.title': 'Privacybeleid',
-    'privacy.lastUpdated': 'Laatst Bijgewerkt: 15 maart 2024',
-    'privacy.intro': 'Bij DevCraft nemen we uw privacy serieus. Dit Privacybeleid legt uit hoe we uw persoonlijke gegevens verzamelen, gebruiken en beschermen.',
+    'privacy.lastUpdated': 'Laatst Bijgewerkt: 26 november 2024',
+    'privacy.intro': 'Bij Devs-Craft nemen we uw privacy serieus. Dit Privacybeleid legt uit hoe we uw persoonlijke gegevens verzamelen, gebruiken en beschermen.',
     'privacy.collection.title': 'Informatie Die We Verzamelen',
     'privacy.collection.content': 'We verzamelen informatie die u rechtstreeks aan ons verstrekt, waaronder naam, e-mailadres, telefoonnummer en andere informatie die u kiest om te verstrekken.',
     'privacy.use.title': 'Hoe We Uw Informatie Gebruiken',
@@ -434,7 +434,7 @@ const translations = {
     'privacy.protection.title': 'Hoe We Uw Informatie Beschermen',
     'privacy.protection.content': 'We implementeren passende beveiligingsmaatregelen om uw persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, wijziging of openbaarmaking.',
     'privacy.contact.title': 'Contact',
-    'privacy.contact.content': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via privacy@devcraft.com',
+    'privacy.contact.content': 'Als u vragen heeft over dit Privacybeleid, neem dan contact met ons op via contact@devs-craft.com',
 
     // Contact Page
     'contact.page.title': 'Get in Touch',
@@ -450,7 +450,7 @@ const translations = {
 
     // Terms of Service
     'terms.title': 'Algemene Voorwaarden',
-    'terms.lastUpdated': 'Laatst Bijgewerkt: 15 maart 2024',
+    'terms.lastUpdated': 'Laatst Bijgewerkt: 26 november 2024',
     'terms.intro': 'Lees deze Algemene Voorwaarden zorgvuldig door voordat u gebruik maakt van onze diensten.',
     'terms.acceptance.title': 'Aanvaarding van Voorwaarden',
     'terms.acceptance.content': 'Door toegang te krijgen tot en gebruik te maken van onze diensten, accepteert u deze Algemene Voorwaarden.',
@@ -465,7 +465,7 @@ const translations = {
     'terms.termination.title': 'Beëindiging',
     'terms.termination.content': 'Wij behouden ons het recht voor om diensten te beëindigen of op te schorten bij schending van deze voorwaarden.',
     'terms.contact.title': 'Contact',
-    'terms.contact.content': 'Als u vragen heeft over deze Algemene Voorwaarden, neem dan contact met ons op via legal@devcraft.com',
+    'terms.contact.content': 'Als u vragen heeft over deze Algemene Voorwaarden, neem dan contact met ons op via contact@devs-craft.com',
 
     // Footer
     'footer.description': 'Bedrijven transformeren door innovatieve weboplossingen.',
@@ -478,7 +478,7 @@ const translations = {
     'footer.company.privacy': 'Privacybeleid',
     'footer.company.terms': 'Algemene Voorwaarden',
     'footer.social.title': 'Volg Ons',
-    'footer.copyright': '© {year} DevCraft. Alle rechten voorbehouden.',
+    'footer.copyright': '© {year} Devs-Craft. Alle rechten voorbehouden.',
   }
 };
 

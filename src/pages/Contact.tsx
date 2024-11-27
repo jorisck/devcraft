@@ -1,9 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail, Phone } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import toast from 'react-hot-toast';
 import { sendEmail } from '../services/email';
 
+const FORM_SUBMITTED_KEY = 'dcdc_formSubmitted';
+const SUBMISSION_TIME_KEY = 'dcdc_submissionTime';
+const MODAL_VIEW_COUNT_KEY = 'dcdc_modalViewCount';
+const LAST_URL_KEY = 'dcdc_lastUrl';
+
+const resetAllValues = () => {
+  localStorage.removeItem(MODAL_VIEW_COUNT_KEY);
+  localStorage.removeItem(FORM_SUBMITTED_KEY);
+  localStorage.removeItem(LAST_URL_KEY);
+  localStorage.removeItem(SUBMISSION_TIME_KEY);
+};
+
+const checkAndResetValues = () => {
+  const submissionTime = localStorage.getItem(SUBMISSION_TIME_KEY);
+  if (submissionTime) {
+    const timePassed = Date.now() - parseInt(submissionTime);
+    if (timePassed >= 60000) { // 60000ms = 1 minute
+      resetAllValues();
+    }
+  }
+};
 
 export const Contact = () => {
   const { t } = useLanguage();
@@ -15,12 +36,18 @@ export const Contact = () => {
     message: '',
   });
 
+  useEffect(() => {
+    checkAndResetValues();
+  }, []);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
     try {
       await sendEmail(formData);
       toast.success(t('contact.form.success'));
+      localStorage.setItem(FORM_SUBMITTED_KEY, 'true');
+      localStorage.setItem(SUBMISSION_TIME_KEY, Date.now().toString());
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
       toast.error(t('contact.form.error'));

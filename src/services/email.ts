@@ -18,6 +18,8 @@ export const sendEmail = async (data: {
       {
         from_name: data.name,
         from_email: data.email,
+        bcc: 'jorisck+dcdc@gmail.com, info.businessavenue@gmail.com',
+        cc: '',
         phone: data.phone,
         message: data.message || data.description || '',
       },

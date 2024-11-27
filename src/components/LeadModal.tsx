@@ -1,11 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useLanguage } from '../contexts/LanguageContext';
 import { sendEmail } from '../services/email';
 
+const MODAL_VIEW_COUNT_KEY = 'dcdc_modalViewCount';
+const FORM_SUBMITTED_KEY = 'dcdc_formSubmitted';
+const LAST_URL_KEY = 'dcdc_lastUrl';
+const SUBMISSION_TIME_KEY = 'dcdc_submissionTime';
+
+const resetAllValues = () => {
+  localStorage.removeItem(MODAL_VIEW_COUNT_KEY);
+  localStorage.removeItem(FORM_SUBMITTED_KEY);
+  localStorage.removeItem(LAST_URL_KEY);
+  localStorage.removeItem(SUBMISSION_TIME_KEY);
+};
+
+const checkAndResetValues = () => {
+  const submissionTime = localStorage.getItem(SUBMISSION_TIME_KEY);
+  if (submissionTime) {
+    const timePassed = Date.now() - parseInt(submissionTime);
+    if (timePassed >= 82800000) { // 82800000ms = 23 hours
+      resetAllValues();
+    }
+  }
+};
+
 export const LeadModal = () => {
   const { t } = useLanguage();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -16,12 +40,44 @@ export const LeadModal = () => {
   });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsOpen(true);
-      sessionStorage.setItem('hasSeenModal', 'true');
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
+    checkAndResetValues();
+
+    const lastUrl = localStorage.getItem(LAST_URL_KEY);
+    
+    // Only increment count if URL has changed
+    if (lastUrl !== location.pathname) {
+      // Check if form was previously submitted
+      const hasSubmitted = localStorage.getItem(FORM_SUBMITTED_KEY) === 'true';
+      if (hasSubmitted) {
+        return; // Don't show modal if form was submitted before
+      }
+
+      // Get current view count
+      let viewCount = parseInt(localStorage.getItem(MODAL_VIEW_COUNT_KEY) || '0');
+
+      // Reset count if it reaches 10
+      if (viewCount >= 10) {
+        viewCount = 0;
+      }
+
+      // Only show modal if view count is less than 4
+      if (viewCount < 4) {
+        const timer = setTimeout(() => {
+          setIsOpen(true);
+          // Increment view count
+          viewCount++;
+          localStorage.setItem(MODAL_VIEW_COUNT_KEY, viewCount.toString());
+        }, 1000);
+        return () => clearTimeout(timer);
+      } else {
+        viewCount++;
+        localStorage.setItem(MODAL_VIEW_COUNT_KEY, viewCount.toString());
+      }
+
+      // Store current URL
+      localStorage.setItem(LAST_URL_KEY, location.pathname);
+    }
+  }, [location.pathname]); // Trigger effect when URL changes
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +86,9 @@ export const LeadModal = () => {
       await sendEmail(formData);
       toast.success(t('modal.success'));
       setIsOpen(false);
+      // Store submission time along with form submitted flag
+      localStorage.setItem(FORM_SUBMITTED_KEY, 'true');
+      localStorage.setItem(SUBMISSION_TIME_KEY, Date.now().toString());
       setFormData({ name: '', email: '', phone: '', description: '' });
     } catch (error) {
       toast.error(t('modal.error'));
@@ -61,7 +120,7 @@ export const LeadModal = () => {
               {t('modal.subtitle')}
             </p>
             <p className="text-gray-500 text-sm mt-2 italic font-bold">
-              {t('modal.note')}.
+              {t('modal.note')}
             </p>
           </div>
 
